@@ -60,9 +60,9 @@ def submit():
     st.session_state.query = ''
 
 
-st.title("💬 Papa Johns Pizza Assistant 💬")
+st.title("💬 Selina, Your Web3 AI Agent 💬")
 
-st.text_input("Play with me:", key='query', on_change=submit)
+st.text_input("Ask me Anything:", key='query', on_change=submit)
 
 user_input = st.session_state.user_input
 
@@ -70,6 +70,5 @@ st.write("You entered: ", user_input)
 
 if user_input:
     result = get_assistant_response(user_input)
-    st.header('Assistant :blue[cool] 👱🏻‍♀️', divider='rainbow')
+    st.header('Selina :blue[AI] 👱🏻‍♀️', divider='rainbow')
     st.text(result)
-
